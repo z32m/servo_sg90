@@ -14,7 +14,7 @@ int servo_sg90_init(servo_sg90_t *servo, const pwm_t *pwm)
     return 0;
 }
 
-int servo_sg90_rotate(servo_sg90_t *servo, int32_t pos])
+int servo_sg90_rotate(servo_sg90_t *servo, int32_t pos)
 {
     fallbacks(pwm_set_dt, servo->pwm, SERVO_SG90_FREQ, pos);
     return 0;
